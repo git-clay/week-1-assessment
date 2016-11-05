@@ -11,7 +11,7 @@ body{
 	}
 .wrapper{
 	width: 800px;
-	background-size: 50% auto;
+	background-size: 75% auto;
 	margin: 0 auto;
 }
 /*
@@ -26,18 +26,22 @@ v structure v
 	float: left;
 	margin: 5%;
 	clear: both;
+/*	height: 25%;					 fix for mobile
+	width: 25%;	*/
 }
 .infoBlock{
 	margin: 5%;
-/*	background-image: url('images/frame.png');			acting weird			*/
+									/*	background-image: url('images/frame.png');			acting weird
+										background-repeat: no-repeat;	*/
 }
 footer{
-	display: inline-block;
+	display: block;
 	clear: both;
 	margin: 0 auto;
+	text-align: center;
 	}
 nav ul{
-list-style: none;
+	list-style: none;
 }
 nav li{
 	display: inline-block;
@@ -45,6 +49,9 @@ nav li{
 
 h6{
 	display: inline;
+}
+p{
+	margin: 2%;
 }
 /*
 ^ end structure ^
@@ -57,19 +64,25 @@ v buttons v
 */
 .btn{
 	display: inline-block;
-	height: 40px;
-	width: 80px;
-	background: #dddddd;
-	border:1px solid #111111;
+	height: 51px;
+	width: 152px;
+	border-radius: 10px;
+	background-repeat: no-repeat;
+	background-position: top;
+	margin-top: 2.5%;
 }
 #iphone{
-	background: "images/badge-iphone.png";
+	background-image: url(images/badge-iphone.png);
 	}
 #android{
-	background-image: "images/badge-android.png"
-	
-	
+	background-image: url(images/badge-android.png);
+
 	}
+#login{
+	background-image: url(images/home.png);
+	background-position: left;
+}
+
 /* ^ end buttons ^ */
 
 @media (min-width: 600px) {
