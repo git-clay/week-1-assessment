@@ -5,26 +5,62 @@ mobile first
 /*
 v background v
 */
-
+body{
+	background-image: linear-gradient(#125688 50%, #ffffff 50%);
+	margin: 100px auto;
+	}
+.wrapper{
+	width: 800px;
+	background-size: 50% auto;
+	margin: 0 auto;
+}
 /*
 ^ end background ^
+v structure v
 */
+.top{
+	display: inline;
+}
+.phonePics{
+	display: block;
+	float: left;
+	margin: 5%;
+	clear: both;
+}
+.infoBlock{
+	margin: 5%;
+/*	background-image: url('images/frame.png');			acting weird			*/
+}
+footer{
+	display: inline-block;
+	clear: both;
+	margin: 0 auto;
+	}
+nav ul{
+list-style: none;
+}
+nav li{
+	display: inline-block;
+}
 
+h6{
+	display: inline;
+}
 /*
+^ end structure ^
 v text v 
 */
 
 /*
 ^ end text ^
+v buttons v
 */
-
-/*v buttons v*/
 .btn{
 	display: inline-block;
-	height: 60px;
-	width: 100px;
+	height: 40px;
+	width: 80px;
 	background: #dddddd;
-	border:1px solid #cccccc;
+	border:1px solid #111111;
 }
 #iphone{
 	background: "images/badge-iphone.png";
