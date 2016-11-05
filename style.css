@@ -1,3 +1,18 @@
+@media (min-width: 600px) {
+	/*
+	for desktop
+	*/
+	*{
+	
+}
+.wrapper{
+	width: 800px;
+	background-size: 75% auto;
+	margin: 0 auto;
+	}
+
+
+}
 /*
 mobile first
 */
@@ -10,7 +25,7 @@ body{
 	margin: 100px auto;
 	}
 .wrapper{
-	width: 800px;
+	width: 900px;
 	background-size: 75% auto;
 	margin: 0 auto;
 }
@@ -19,25 +34,46 @@ body{
 v structure v
 */
 .top{
-	display: inline;
+	display: inline-block;
+	width: 480px;
+	height: auto;
+	float: right;
 }
+#insta{
+	width:70%;
+	display: inline-block;
+	padding: 0 20px 0 0;
+
+}
+
 .phonePics{
-	display: block;
+	display: inline-block;
+	margin: 2%;
 	float: left;
-	margin: 5%;
-	clear: both;
-/*	height: 25%;					 fix for mobile
-	width: 25%;	*/
+/*	width: 20%;						makes image small in mobile and desktop
+	height: auto; */
 }
 .infoBlock{
-	margin: 5%;
+	width:480px;
+	margin:40px 0;
+	float: right;
+	background: white;
+	border-radius: 5px;
 									/*	background-image: url('images/frame.png');			acting weird
 										background-repeat: no-repeat;	*/
+}
+img{
+	width: 100%;
+	height: auto;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
 }
 footer{
 	display: block;
 	clear: both;
 	margin: 0 auto;
+	padding-top: 40px;
 	text-align: center;
 	}
 nav ul{
@@ -45,14 +81,41 @@ nav ul{
 }
 nav li{
 	display: inline-block;
+	font-size: 11px;
+	padding: 0 .9em;
+}
+a{ 
+	text-decoration: none;
+	color: #125688;
+	font-weight: 700;
 }
 
+
+										/* text-decoration and text transform?*/
+
+h2{
+	font-size: 1.2em;
+	font-weight: 900;
+	letter-spacing: .08em;
+	line-height: 1.3em;
+	color:#124678;
+	width: 230px;
+	display: inline-block;
+	padding: 20px 0 15px 25px;
+}
+
+b{
+font-weight: 900;
+}
 h6{
 	display: inline;
 }
 p{
-	margin: 2%;
-}
+	font-weight: 100;
+	font-size: .9em;
+	line-height:1.1em;
+	padding: 0 0 25px 25px;
+	}
 /*
 ^ end structure ^
 v text v 
@@ -71,22 +134,27 @@ v buttons v
 	background-position: top;
 	margin-top: 2.5%;
 }
+.appBtns{
+	display: inline-block;
+	padding: 0 0 0 40px;
+}
 #iphone{
 	background-image: url(images/badge-iphone.png);
+	margin-right: 15px;
 	}
 #android{
 	background-image: url(images/badge-android.png);
-
 	}
 #login{
-	background-image: url(images/home.png);
-	background-position: left;
+	border: 2px solid black;
+	width: 120px;
+	height: 50px;
+	float: right;
+	/*background-image: url(images/home.png);
+	background-position: left;*/
+	background: rgba(18,106,166,1);
 }
 
 /* ^ end buttons ^ */
 
-@media (min-width: 600px) {
-	/*
-	for desktop
-	*/
-}
+
