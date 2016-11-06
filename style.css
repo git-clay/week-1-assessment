@@ -1,29 +1,28 @@
-@media{
-	.phonePics{
-width:;
-	}
-}
+/*Definitly need to work on mobile development -- everything breaks with screen size changes
+even before the screen size hits the 600px threshold I still have issues with the phone image not resizing
+
+
+The biggest issue I have had is in the @media no matter what I change some of the margins
+or padding will not go away!*/ 
+
+
+
+
 @media (max-width: 600px) {
-	/*
-	for desktop
-	*/
 *{
 	float:none;
 }
 html{
 	width: 450px;
 	height:auto;
-	margin:0 auto;
+	margin:0;
 }
-img{
-	width: 40%;
-}
+
 body{
 	width: 450px;
 	height:600px;
-	padding: none;
-	margin:0 auto;
-
+	padding: 0;
+	margin:0;
 }
 html,body{
 	width: 450px;
@@ -70,7 +69,8 @@ html,body{
 	position: relative;
 	margin: 0 auto;
 	right: 20px;
-	top: 60px;
+	bottom: 9px;
+	padding: 0 0 0 0;
 }
 .btn{
 	display: inline-block;
@@ -80,10 +80,6 @@ html,body{
 	border-radius: 10px;
 	background-repeat: no-repeat;
 	background-position: top;
-}
-
-p{
-
 }
 p #login{
 	width:20px;
@@ -113,14 +109,7 @@ footer{
 	text-align: center;
 	background-color:#125688;
 
-}
-/*no clue why my footer has 500px of margin..*/
-
-
-
-
-
-
+	}
 }
 /*
 mobile first
@@ -133,7 +122,7 @@ body{
 	width: 80%;
 	height: auto;
 	background-image: linear-gradient(rgba(18,86,136,.85) 40%, #ffffff 60%);
-	margin: 100px auto;
+	margin: 8% auto;
 	padding:0 5%;
 	}
 
