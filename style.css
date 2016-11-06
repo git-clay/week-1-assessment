@@ -1,15 +1,72 @@
-@media (min-width: 600px) {
+@media (max-width: 600px) {
 	/*
 	for desktop
 	*/
-	*{
-	
+*{
+	float:none;
 }
-.wrapper{
-	width: 800px;
-	background-size: 75% auto;
-	margin: 0 auto;
+html{
+	width: 300px;
+	height:560px;
+	margin: 0;
+}
+body{
+	width: 300px;
+	height:560px;
+}
+html,body{
+	width: 300px;
+	height: auto;
+	display: block;
+	position: absolute;
+	background: blue;
+	clear: both;
+	float: none;
+	margin: 0;
+}
+
+.phonePics img{
+	display: none;
+}
+.top{
+	width: 300px;
+	height: auto;
+	display: block;
+	clear: both;
+	position: absolute;
 	}
+#insta{
+	width:80px;
+	height: auto;
+	display: block;
+	position: absolute;
+}
+.infoBlock{
+	width:300px;
+	height: auto;
+	display: block;
+	clear: both;
+	top:30px;
+	position: absolute;
+	}
+.appBtns{
+	width: 350px;
+	position: absolute;
+}
+.btn{
+	display: block;
+	width: 80px;
+}
+footer{
+	display: block;
+	width: 300px;
+	position: relative;
+}
+
+
+
+
+
 
 
 }
@@ -21,40 +78,41 @@ mobile first
 v background v
 */
 body{
+	width: 800px;
+	height: auto;
 	background-image: linear-gradient(#125688 50%, #ffffff 50%);
 	margin: 100px auto;
+	padding:0 15%;
 	}
-.wrapper{
-	width: 900px;
-	background-size: 75% auto;
-	margin: 0 auto;
-}
+
 /*
 ^ end background ^
 v structure v
 */
-.top{
-	display: inline-block;
-	width: 480px;
-	height: auto;
-	float: right;
-}
-#insta{
-	width:70%;
-	display: inline-block;
-	padding: 0 20px 0 0;
-
-}
-
 .phonePics{
 	display: inline-block;
+	width: 30%
 	margin: 2%;
 	float: left;
 /*	width: 20%;						makes image small in mobile and desktop
 	height: auto; */
 }
+.top{
+	display: inline-block;
+	width: 55%;
+	height: auto;
+	float: right;
+}
+#insta{
+	width:60%;
+	display: inline-block;
+	padding: 0 20px 0 0;
+
+}
+
+
 .infoBlock{
-	width:480px;
+	width:55%;
 	margin:40px 0;
 	float: right;
 	background: white;
@@ -160,11 +218,11 @@ v buttons v
 	background: rgba(18,106,166,1);
 }
 #login img{
-width:25%;
-float: left;
-position: relative;
-top: .7em;
-left: 1.1em;
+	width:25%;
+	float: left;
+	position: relative;
+	top: .7em;
+	left: 1.1em;
 }
 #login p{
 	color: white;
