@@ -1,3 +1,8 @@
+@media{
+	.phonePics{
+width:;
+	}
+}
 @media (max-width: 600px) {
 	/*
 	for desktop
@@ -6,25 +11,26 @@
 	float:none;
 }
 html{
-	width: 300px;
-	height:560px;
-	margin: 0;
+	width: 450px;
+	height:auto;
 	margin:0 auto;
 }
+img{
+	width: 40%;
+}
 body{
-	width: 300px;
-	height:560px;
-	background-image: linear-gradient(#125688 50%, #ffffff 50%);
+	width: 450px;
+	height:600px;
+	padding: none;
 	margin:0 auto;
 
 }
 html,body{
-	width: 300px;
+	width: 450px;
 	height: auto;
 	display: block;
 	position: absolute;
 	clear: both;
-	float: none;
 	margin: 0 auto;
 }
 
@@ -32,24 +38,25 @@ html,body{
 	display: none;
 }
 .top{
-	width: 300px;
-	height: 100px;
+	width: 00px;
+	height: 60px;
 	display: block;
-	clear: both;
-	position: absolute;
+	position: relative;
 	margin: 0 auto;
-
+	float: none;
+	background-color:#125688;
+	right:150px;	
 
 	}
 #insta{
-	width:80px;
-	height: 75px;
+	width:70px;
+	height: 60px;
 	display: block;
-	position: absolute;
+	position: relative;
 	margin:0 auto;
 }
 .infoBlock{
-	width:300px;
+	width:390px;
 	height: 300px;
 	display: block;
 	clear: both;
@@ -60,21 +67,52 @@ html,body{
 .appBtns{
 	width: 350px;
 	height: 75px;
-	position: absolute;
+	position: relative;
 	margin: 0 auto;
+	right: 20px;
+	top: 60px;
 }
 .btn{
-	display: block;
+	display: inline-block;
+	float:none;
+	height: auto;
+	width: 100px;
+	border-radius: 10px;
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+p{
+
+}
+p #login{
+	width:20px;
+}
+.btn{
+	width: 20px;
+
+}
+#login{
+	border: 1px solid black;
 	width: 80px;
+	height: 45px;
+	float: right;
+	position: relative;
+}
+li a{
+color:white;
 }
 footer{
-	display: block;
-	width: 350px;
+	display: inline-block;
+	width: 100%;
 	height: 75px;
 	position: relative;
 	top:450px;
+	left: 30px;
 	margin:0 auto;
 	text-align: center;
+	background-color:#125688;
+
 }
 /*no clue why my footer has 500px of margin..*/
 
@@ -92,25 +130,18 @@ mobile first
 v background v
 */
 body{
-	width: 800px;
+	width: 80%;
 	height: auto;
-	background-image: linear-gradient(#125688 50%, #ffffff 50%);
+	background-image: linear-gradient(rgba(18,86,136,.85) 40%, #ffffff 60%);
 	margin: 100px auto;
-	padding:0 15%;
+	padding:0 5%;
 	}
 
 /*
 ^ end background ^
 v structure v
 */
-.phonePics{
-	display: inline-block;
-	width: 30%
-	margin: 2%;
-	float: left;
-/*	width: 20%;						makes image small in mobile and desktop
-	height: auto; */
-}
+
 .top{
 	display: inline-block;
 	width: 55%;
@@ -129,14 +160,19 @@ v structure v
 	width:55%;
 	margin:40px 0;
 	float: right;
-	background: white;
 	border-radius: 5px;
+	background-image: url(images/frame.png);
+	background-repeat: no-repeat;
 									/*	background-image: url('images/frame.png');			acting weird
 										background-repeat: no-repeat;	*/
 }
 img{
-	width: 100%;
-	height: auto;
+	display: block;
+	width: auto%
+	margin: auto%;
+	float: left;
+	max-height: 512px;
+	max-width: 318px;
 }
 body{
 	font-family: 'Open Sans', sans-serif;
@@ -166,9 +202,6 @@ a:hover{
 	background-color: #e9e9e9;
 }
 
-
-										/* text-decoration and text transform?*/
-
 h2{
 	font-size: 1.2em;
 	font-weight: 900;
@@ -187,6 +220,7 @@ h6{
 	display: inline;
 }
 p{
+	width: 80%;
 	font-weight: 100;
 	font-size: .9em;
 	line-height:1.1em;
@@ -211,7 +245,7 @@ v buttons v
 }
 .appBtns{
 	display: inline-block;
-	padding: 0 0 0 40px;
+	padding: 20px 0 0 40px;
 }
 #iphone{
 	background-image: url(images/badge-iphone.png);
@@ -229,7 +263,7 @@ v buttons v
 
 		/*background-image: url(images/home.png);
 	background-position: left;*/
-	background: rgba(18,106,166,1);
+	background: rgba(18,86,136,.25);
 }
 #login img{
 	width:25%;
